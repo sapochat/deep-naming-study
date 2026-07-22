@@ -1,0 +1,19 @@
+{
+  "project": "Field Notes for Useful Machines",
+  "purpose": "Name a durable publication about technology, institutions, and practical judgment.",
+  "audience": "Operators, designers, and curious executives",
+  "voice": "Restrained, institutional, dry, and slightly strange",
+  "source_inspiration": "Forgotten public offices and field journals",
+  "mechanism": "A modest institution making quiet judgments about consequential technology",
+  "dead_lanes": [
+    "cyberpunk compounds",
+    "AI startup vocabulary",
+    "knowing whimsy"
+  ],
+  "rubric": [
+    "spoken quality",
+    "editorial range",
+    "tonal fidelity",
+    "durability"
+  ]
+}
