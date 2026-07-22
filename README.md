@@ -17,12 +17,15 @@ More names do not help when the generative theory is wrong. Recover the source m
 9. Check collisions and domains only for taste-qualified survivors.
 10. Simulate finalists over issue titles, descriptors, a masthead, and spoken use.
 
-## Run
+## Install and run
 
 ```bash
-PYTHONPATH=src python3 -m deep_naming_study.cli init examples/publication-brief.json /tmp/naming-study
-PYTHONPATH=src python3 -m deep_naming_study.cli check /tmp/naming-study
-PYTHONPATH=src python3 -m unittest discover -s tests -v
+python3 -m venv .venv
+.venv/bin/pip install -e .
+
+.venv/bin/deep-naming-study init examples/publication-brief.json /tmp/naming-study
+.venv/bin/deep-naming-study check /tmp/naming-study
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
 MIT licensed.
