@@ -17,5 +17,10 @@ class StudyTests(unittest.TestCase):
             (root / "04-blind-critics" / "README.md").unlink()
             (root / "04-blind-critics").rmdir()
             self.assertTrue(any("04-blind-critics" in e for e in validate_study(root)))
+    def test_missing_stage_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "study"; scaffold_study(BRIEF, root)
+            (root / "06-simulations" / "template.md").unlink()
+            self.assertIn("missing stage file: 06-simulations/template.md", validate_study(root))
 
 if __name__ == "__main__": unittest.main()
